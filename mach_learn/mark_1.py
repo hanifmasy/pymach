@@ -131,6 +131,7 @@ network = OurNeuralNetwork()
 network.train(data, all_y_trues)
 
 # Make some predictions
+# female 1 and male 0
 emily = np.array([-7, -3]) # 128 pounds, 63 inches
 frank = np.array([20, 2])  # 155 pounds, 68 inches
 print("Emily: %.3f" % network.feedforward(emily))

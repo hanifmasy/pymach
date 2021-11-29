@@ -7,13 +7,13 @@ data = read_csv(path,usecols=names)
 # print(data.shape)
 # print(data.dtypes)
 
-set_option('display.width',100)
-set_option('precision',2)
+# set_option('display.width',100)
+# set_option('precision',2)
 
 # print(data.shape)
 # print(data.describe())
 
-# corrs = data.corr(method='pearson')
-# print(corrs)
+corrs = data.corr(method='pearson')
+print(corrs)
 
-print(data.skew())
+# print(data.skew())
